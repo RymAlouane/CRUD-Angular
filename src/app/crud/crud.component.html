@@ -1,0 +1,16 @@
+<h1>Product list</h1>
+<div *ngFor="let p of listP ">
+Title: {{p.title}}
+  Price: {{p.price}}
+</div>
+<form>
+  <label>id</label>
+  <input type="number" name="id" [(ngModel)]="product.id">
+  <label>title</label>
+  <input type="text" name="title" [(ngModel)]="product.title" >
+  <label>price</label>
+  <input type="number" name="price" [(ngModel)]="product.price">
+  <label>Quantie</label>
+  <input type="number" name="quantity" [(ngModel)]="product.quantity">
+  <button (click)="save()">save</button>
+</form>
